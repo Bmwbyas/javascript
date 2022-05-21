@@ -1,13 +1,9 @@
-function howMuchWater(water, load, clothes){
-    if (clothes>load*2){
-      return "Too much clothes";
-    } else if(clothes<load){
-       return "Not enough clothes";
-    } else{
-      exp=clothes-load;
-       num=water*Math.pow(1.1, exp);
-      return parseFloat(num.toFixed(2));
+function booleanToString(b){
+    if (b==true){
+      return Boolean(true);
+    }else {
+      return Boolean(false);
     }
-  
   }
-  howMuchWater();
+  console.log(booleanToString(true));
+  onsole.log(booleanToString(false));
